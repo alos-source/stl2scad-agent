@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.egg-info/
+dist/
+wheels/
+
+# Virtual environments
+.venv/
+
+# Test & tool caches
+.pytest_cache/
+pytest-cache-files-*/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# stl2scad build, input & temporary artifacts
+build/
+References/
+STL-Files/
+_*_wrapper.scad
+*.gcode
+
+# OS & editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

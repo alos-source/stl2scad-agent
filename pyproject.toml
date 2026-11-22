@@ -1,0 +1,33 @@
+[project]
+name = "stl2scad"
+version = "0.1.0"
+description = "Hybrid STL-to-OpenSCAD reverse-engineering converter"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "manifold3d>=3.5.5",
+    "matplotlib>=3.11.2",
+    "networkx>=3.7",
+    "numpy>=2.5.5",
+    "pillow>=13.0.0",
+    "pydantic>=2.14.4",
+    "rich>=15.0.0",
+    "rtree>=1.4.1",
+    "scipy>=1.18.1",
+    "shapely>=2.2.0",
+    "trimesh>=5.2.1",
+    "typer>=0.29.2",
+]
+
+[project.scripts]
+stl2scad = "stl2scad.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
